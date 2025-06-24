@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <header>
     <nav class="navbar">
@@ -24,10 +26,35 @@
 
   <section id="home" class="hero-section">
     <div class="hero-content">
-      <h1>Hello, I'm <span>Karan</span></h1>
-      <p>Web Developer | Designer | Freelancer</p>
+      <h1>Hello, I'm <span>Karan Rathour</span></h1>
+      <p class="web">Web Developer | Designer | Freelancer</p>
       <a href="#projects" class="btn">View My Work</a>
-    </div>
+      <div class="just">
+        <div class="skills-card">
+          <h2>Technical Skills</h2>
+
+          <div class="skill-item"><i>✅</i> Python</div>
+          <div class="skill-item"><i>✅</i> C++</div>
+          <div class="skill-item"><i>✅</i> JavaScript</div>
+          <div class="skill-item"><i>✅</i> HTML, CSS</div>
+          <div class="skill-item"><i>✅</i> DBMS</div>
+
+          <div class="skill-item php"><i>🟡</i> PHP – 1/4 complete</div>
+          <div class="php-progress">
+            <div class="php-progress-bar"></div>
+          </div>
+        </div>
+        <div class="skills-card">
+          <h2>Acedemic Qualification</h2>
+
+          <div class="skill-item"><i>✅</i>10th from UP BOARD </div>
+          <div class="skill-item"><i>✅</i> 12th from UP BOARD</div>
+          <div class="skill-item php"><i>🟡</i> BCA from DBRAU - 5th Sem</div>
+          <div class="php-progress">
+            <div class="bca-progress-bar"></div>
+          </div>
+        </div>
+
   </section>
 
   <section id="services" class="section">
@@ -49,50 +76,52 @@
         <p>Ensuring your website looks great on all devices.</p>
       </div>
     </div>
+
+    </div>
   </section>
 
- <section id="projects" class="section dark">
-  <h2 class="section-title">Projects</h2>
-  <div class="card-container">
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200" alt="Elegant Bangles" />
-      <h3>Elegant Bangles</h3>
-      <p>Jewelry e-commerce site with a stunning front-end catalog.</p>
-      <p class="tags">HTML | CSS | JS | PHP</p>
-      <a href="#" class="project-btn">Live Demo</a>
+  <section id="projects" class="section dark">
+    <h2 class="section-title">Projects</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Elegant Bangles" />
+        <h3>Elegant Bangles</h3>
+        <p>Jewelry e-commerce site with a stunning front-end catalog.</p>
+        <p class="tags">HTML | CSS | JS | PHP</p>
+        <a href="#" class="project-btn">Live Demo</a>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Discuss Forum" />
+        <h3>Discuss Forum</h3>
+        <p>Forum for programmers built using PHP and MySQL backend.</p>
+        <p class="tags">PHP | MySQL | HTML | Bootstrap</p>
+        <a href="#" class="project-btn">GitHub</a>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Weather App" />
+        <h3>Weather App</h3>
+        <p>Real-time weather app using OpenWeather API and JS fetch.</p>
+        <p class="tags">HTML | CSS | JS | API</p>
+        <a href="#" class="project-btn">Live Demo</a>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Portfolio" />
+        <h3>Personal Portfolio</h3>
+        <p>Clean responsive portfolio to showcase my web dev skills.</p>
+        <p class="tags">HTML | CSS | JS</p>
+        <a href="#" class="project-btn">Live Demo</a>
+      </div>
     </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200" alt="Discuss Forum" />
-      <h3>Discuss Forum</h3>
-      <p>Forum for programmers built using PHP and MySQL backend.</p>
-      <p class="tags">PHP | MySQL | HTML | Bootstrap</p>
-      <a href="#" class="project-btn">GitHub</a>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200" alt="Weather App" />
-      <h3>Weather App</h3>
-      <p>Real-time weather app using OpenWeather API and JS fetch.</p>
-      <p class="tags">HTML | CSS | JS | API</p>
-      <a href="#" class="project-btn">Live Demo</a>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200" alt="Portfolio" />
-      <h3>Personal Portfolio</h3>
-      <p>Clean responsive portfolio to showcase my web dev skills.</p>
-      <p class="tags">HTML | CSS | JS</p>
-      <a href="#" class="project-btn">Live Demo</a>
-    </div>
-  </div>
-</section>
+  </section>
 
   <section id="contact" class="section">
-    <h2 class="section-title">Contact Me</h2>
-  <form class="contact-form" id="contactForm">
-  <input type="text" id="name" placeholder="Your Name" required />
-  <input type="email" id="email" placeholder="Your Email" required />
-  <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-  <button type="submit" class="btn">Send Message</button>
-</form>
+    <h2 class="section-title">Review my website</h2>
+    <form class="contact-form" id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn submit">Send Message</button>
+    </form>
 
   </section>
 
@@ -105,4 +134,5 @@
     </div>
   </footer>
 </body>
+
 </html>
