@@ -1,7 +1,12 @@
 document.getElementById("contactForm").addEventListener("submit", async function (e) {
   e.preventDefault();
+  const submitBtn = e.target.querySelector('button[type="submit"]');
+  const successMsg = document.getElementById("successMessage");
 
- console.log("Form submitted");
+  submitBtn.classList.add("loading");
+  submitBtn.disabled = true;
+  successMsg.classList.remove("show");
+
   const data = {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
@@ -16,9 +21,12 @@ document.getElementById("contactForm").addEventListener("submit", async function
     });
 
     const result = await res.json();
-    alert(result.message);
+    successMsg.textContent = result.message;
+    successMsg.classList.add("show");
   } catch (err) {
     alert("Something went wrong. Try again later.");
+  } finally {
+    submitBtn.classList.remove("loading");
+    submitBtn.disabled = false;
   }
 });
-
