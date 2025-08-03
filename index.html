@@ -7,84 +7,154 @@
   <title>Advanced Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- ✅ Font Awesome v6 CDN (Latest & Secure) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
 
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- ✅ Font Awesome Latest CDN (v6) -->
+
+
 </head>
 
 <body>
   <header>
-       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Karan</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Me</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Projects
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Chating app</a></li>
-            <li><a class="dropdown-item" href="#">e-commerce</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Working Projects</a></li>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">Karan's Portfolio</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <!-- Menu Items Aligned to Left -->
+          <ul class="navbar-nav me-auto"> <!-- Changed from ms-auto to me-auto -->
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#rojects" data-bs-toggle="dropdown">
+                Projects
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Elegant Bangles</a></li>
+                <li><a class="dropdown-item" href="#">Chating app</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
           </ul>
-        </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li> -->
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+
+
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
   </header>
 
   <section id="home" class="hero-section">
     <div class="hero-content">
-      <h1>Hello, I'm <span>Karan Rathour</span></h1>
-      <p class="web">Web Developer | Designer | Freelancer</p>
-      <a href="#portfolio" class="btn btn-light btn-lg">View My Work</a>
-      <div class="just">
-        <div class="skills-card">
-          <h2>Technical Skills</h2>
-
-          <div class="skill-item"><i>✅</i> Python</div>
-          <div class="skill-item"><i>✅</i> C++</div>
-          <div class="skill-item"><i>✅</i> JavaScript</div>
-          <div class="skill-item"><i>✅</i> HTML, CSS</div>
-          <div class="skill-item"><i>✅</i> DBMS</div>
-
-          <div class="skill-item php"><i>🟡</i> PHP – 1/4 complete</div>
-          <div class="php-progress">
-            <div class="php-progress-bar"></div>
-          </div>
+      <div class="typewriter-wrapper">
+        <div class="typewriter-text">
+          <h1>Hello, I'm <span>Karan Rathour</span></h1>
         </div>
-        <div class="skills-card">
-          <h2>Acedemic Qualification</h2>
+        <div class="underscore"></div>
 
-          <div class="skill-item"><i>✅</i>10th from UP BOARD </div>
-          <div class="skill-item"><i>✅</i> 12th from UP BOARD</div>
-          <div class="skill-item php"><i>🟡</i> BCA from DBRAU - 5th Sem</div>
-          <div class="php-progress">
-            <div class="bca-progress-bar"></div>
-          </div>
+      </div>
+      <!-- Social Icons -->
+      <div class="text-center my-4">
+        <a href="https://www.instagram.com/rathour_karaan/#" target="_blank" class="text-danger mx-3 fs-3">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/917452916102" target="_blank" class="text-success mx-3 fs-3">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://github.com/dashboard" target="_blank" class="text-light mx-3 fs-3">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/karan-rathour-265128315/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bx9yfuI63S%2B2UtxXjRJN7lQ%3D%3D"
+          target="_blank" class="text-primary mx-3 fs-3">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+
+    </div>
+    <p class="web">Web Developer | Designer | Freelancer</p>
+    <a href="#projects" class="btn btn-light btn-lg ">View My Work</a>
+    <div class="just">
+      <div class="skills-card">
+        <h2>Technical Skills</h2>
+
+        <div class="skill-item"><i>✅</i> Python</div>
+        <div class="skill-item"><i>✅</i> C++</div>
+        <div class="skill-item"><i>✅</i> JavaScript</div>
+        <div class="skill-item"><i>✅</i> HTML, CSS</div>
+        <div class="skill-item"><i>✅</i> DBMS</div>
+
+        <div class="skill-item php"><i>🟡</i> PHP – 1/4 complete</div>
+        <div class="php-progress">
+          <div class="php-progress-bar"></div>
         </div>
+      </div>
+      <div class="skills-card">
+        <h2>Acedemic Qualification</h2>
+
+        <div class="skill-item"><i>✅</i>10th from UP BOARD </div>
+        <div class="skill-item"><i>✅</i> 12th from UP BOARD</div>
+        <div class="skill-item php"><i>🟡</i> BCA from DBRAU - 5th Sem</div>
+        <div class="php-progress">
+          <div class="bca-progress-bar"></div>
+        </div>
+      </div>
 
   </section>
+  <section  id= "about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate web developer with a strong foundation in Python, HTML, CSS, JavaScript, and Flask. <br>
+      I enjoy building responsive websites and web applications that solve real-world problems.<br>
+      Always eager to learn and explore new technologies.
+    </p>
+  </section>
+  <!-- Education Section Start -->
+  <section id="education" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Education</h2>
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title">Bachelor of Computer Applications (BCA)</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Dr Bhimrao Ambedkar University, Agra
+ 2023 - 2026</h6>
+             <ul class="text-muted">
+  <li>CGPA: 7.9 (Till 4th Sem)</li>
+  <li>Received Certificate of cisco in Python</li>
+  <li>Built full-stack web apps using Python, JS & MySQL</li>
+</ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Education Section End -->
 
   <section id="services" class="section">
     <h2 class="section-title">Services</h2>
@@ -120,10 +190,10 @@
         <a href="#" class="project-btn">Live Demo</a>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Discuss Forum" />
-        <h3>Discuss Forum</h3>
-        <p>Forum for programmers built using PHP and MySQL backend.</p>
-        <p class="tags">PHP | MySQL | HTML | Bootstrap</p>
+        <img src="https://via.placeholder.com/300x200" alt="Chating app" />
+        <h3>Chating app</h3>
+        <p></p>
+        <p class="tags">Python | MySQL | HTML | Bootstrap</p>
         <a href="#" class="project-btn">GitHub</a>
       </div>
       <div class="card">
@@ -165,19 +235,29 @@
         <button type="submit" class="btn btn-primary">Send</button>
       </form>
     </div>
+    <div id="successMessage" style="margin-top:10px;"></div>
+
   </section>
   <footer>
     <p>© 2025 Karan.dev | All Rights Reserved</p>
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-    </div>
+    <div class="text-center my-4">
+        <a href="https://www.instagram.com/rathour_karaan/#" target="_blank" class="text-danger mx-3 fs-3">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/917452916102" target="_blank" class="text-success mx-3 fs-3">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://github.com/dashboard" target="_blank" class="text-light mx-3 fs-3">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/karan-rathour-265128315/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bx9yfuI63S%2B2UtxXjRJN7lQ%3D%3D"
+          target="_blank" class="text-primary mx-3 fs-3">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
 </html>
-
-
