@@ -12,20 +12,21 @@ body {
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem;
+  display: flex; 
+  justify-content: space-around;
+  padding: 0%;
+  max-height: fit-content;
+  /* height: 50px; */
   background-color: #1a1a1a;
   color: #fff;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
-
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 10px;
 }
 
 .nav-links a {
@@ -57,7 +58,7 @@ body {
   font-weight: bold;
   text-decoration: none;
   border-radius: 5px;
-  transition: background 0.3s;
+  transition: 0.3s;
 }
 
 .project-btn:hover {
@@ -79,7 +80,6 @@ p.web{
 }
 .btn {
   margin-top: 1.5rem;
-  margin-bottom: -2rem;
   background-color: #fff;
   color: #333;
   padding: 0.75rem 1.6rem;
@@ -92,6 +92,35 @@ p.web{
   display: flex;
   align-content: space-evenly;
 }
+
+.typewriter-wrapper {
+      font-size: 28px;
+      line-height: 28px;
+      display: flex;
+      align-items: center;
+    }
+
+    .typewriter-text {
+      overflow: hidden;
+      white-space: nowrap;
+      width: 0;
+      animation: typing 4s steps(20) 1s infinite alternate;
+    }
+
+    .underscore {
+      animation: blink 0.7s step-end infinite;
+      margin-left: 2px;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 26ch }
+    }
+
+    @keyframes blink {
+      50% { opacity: 0 }
+    }
+ 
 .skills-card {
       margin: 3rem;
       background: white;
@@ -162,6 +191,46 @@ p.web{
   margin-bottom: 2rem;
 }
 
+.Edu{
+  width: 100%;
+  height: 10rem;
+  background: #e3e7ef;
+}
+.about {
+      padding: 80px 20px;
+      max-width:100%;
+      margin: 0 auto;
+      height: auto;
+      background-color: hsl(210, 21%, 95%);
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 36px;
+      color: #382323;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 18px;
+      color: #3b2e2e;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        font-size: 22px;
+      }
+
+      .about h2 {
+        font-size: 28px;
+      }
+
+      .about p {
+        font-size: 16px;
+      }
+    }
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -231,6 +300,30 @@ footer {
   border-radius: .80rem;
   font-size: 1rem;
 }
+button {
+  transition: transform 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.loading {
+  opacity: 0.7;
+}
+
+#successMessage {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  color: green;
+}
+
+#successMessage.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 /* === MOBILE RESPONSIVE FIXES === */
@@ -293,4 +386,3 @@ footer {
     height: auto;
   }
 }
-
