@@ -234,7 +234,7 @@ p.web{
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 2rem;
 }
 
@@ -386,3 +386,5 @@ button:active {
     height: auto;
   }
 }
+
+
