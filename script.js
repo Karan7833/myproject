@@ -30,23 +30,24 @@ document.getElementById("contactForm").addEventListener("submit", async function
     submitBtn.disabled = false;
   }
 });
- const modal = document.getElementById('certificateModal');
-  const btn = document.getElementById('viewCertificateBtn');
-  const span = document.querySelector('.close');
+const modal = document.getElementById('certificateModal');
+  const link = document.getElementById('viewCertificateLink');
+  const closeBtn = document.querySelector('.close');
 
-  // Button click par modal show karo
-  btn.onclick = () => {
+  // Link click par modal show karo
+  link.onclick = () => {
     modal.style.display = 'block';
   };
 
   // Close icon click par modal hide karo
-  span.onclick = () => {
+  closeBtn.onclick = () => {
     modal.style.display = 'none';
   };
 
-  // Agar user modal ke baahar click kare toh bhi modal close ho jaye
+  // Agar user modal ke baahar click kare toh bhi modal band ho jaye
   window.onclick = (event) => {
     if (event.target === modal) {
       modal.style.display = 'none';
     }
   };
+
